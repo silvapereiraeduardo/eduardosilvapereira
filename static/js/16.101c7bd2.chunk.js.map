@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Icons/FaRegCopyright.js"],"names":["FaRegCopyright"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/16.101c7bd2.chunk.js","sourcesContent":["import { FaRegCopyright } from 'react-icons/fa';\r\n\r\nexport default FaRegCopyright;\r\n"],"sourceRoot":""}

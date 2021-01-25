@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Icons/FaSass.js"],"names":["FaSass"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/17.698a0031.chunk.js","sourcesContent":["import { FaSass } from 'react-icons/fa';\r\n\r\nexport default FaSass;\r\n"],"sourceRoot":""}

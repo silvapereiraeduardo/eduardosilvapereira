@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Icons/FaFacebookF.js"],"names":["FaFacebookF"],"mappings":"2JAAA,mBAEeA,YAAf","file":"static/js/8.8012752e.chunk.js","sourcesContent":["import { FaFacebookF } from 'react-icons/fa';\r\n\r\nexport default FaFacebookF;\r\n"],"sourceRoot":""}

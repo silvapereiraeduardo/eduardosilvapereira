@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Icons/FaBootstrap.js"],"names":["FaBootstrap"],"mappings":"2JAAA,mBAEeA,YAAf","file":"static/js/6.f9959481.chunk.js","sourcesContent":["import { FaBootstrap } from 'react-icons/fa';\r\n\r\nexport default FaBootstrap;\r\n"],"sourceRoot":""}
