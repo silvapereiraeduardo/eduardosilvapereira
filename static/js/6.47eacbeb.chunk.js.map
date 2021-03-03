@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Icons/FaAngular.js"],"names":["FaAngular"],"mappings":"2JAAA,mBAEeA,YAAf","file":"static/js/6.47eacbeb.chunk.js","sourcesContent":["import { FaAngular } from 'react-icons/fa';\r\n\r\nexport default FaAngular;\r\n"],"sourceRoot":""}

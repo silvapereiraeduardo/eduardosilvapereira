@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/Icons/FaNodeJs.js"],"names":["FaNodeJs"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/13.6095b59b.chunk.js","sourcesContent":["import { FaNodeJs } from 'react-icons/fa';\r\n\r\nexport default FaNodeJs;\r\n"],"sourceRoot":""}

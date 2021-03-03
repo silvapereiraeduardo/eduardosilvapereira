@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Icons/FaGithub.js"],"names":["FaGithub"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/10.35e39410.chunk.js","sourcesContent":["import { FaGithub } from 'react-icons/fa';\r\n\r\nexport default FaGithub;\r\n"],"sourceRoot":""}
