@@ -1,2 +1,0 @@
-(this["webpackJsonpeduardosilvapereira-projeto-site"]=this["webpackJsonpeduardosilvapereira-projeto-site"]||[]).push([[12],{46:function(e,r,s){"use strict";s.r(r);var a=s(30);r.default=a.g}}]);
-//# sourceMappingURL=12.cda4b1ca.chunk.js.map

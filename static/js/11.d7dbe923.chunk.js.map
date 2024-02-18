@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/Icons/FaHtml5.js"],"names":["FaHtml5"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/11.d7dbe923.chunk.js","sourcesContent":["import { FaHtml5 } from 'react-icons/fa';\r\n\r\nexport default FaHtml5;\r\n"],"sourceRoot":""}

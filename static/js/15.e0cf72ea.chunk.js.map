@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/Icons/FaPhp.js"],"names":["FaPhp"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/15.e0cf72ea.chunk.js","sourcesContent":["import { FaPhp } from 'react-icons/fa';\r\n\r\nexport default FaPhp;\r\n"],"sourceRoot":""}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/Icons/FaCss3Alt.js"],"names":["FaCss3Alt"],"mappings":"2JAAA,mBAEeA,YAAf","file":"static/js/8.50dfbcdf.chunk.js","sourcesContent":["import { FaCss3Alt } from 'react-icons/fa';\r\n\r\nexport default FaCss3Alt;\r\n"],"sourceRoot":""}
