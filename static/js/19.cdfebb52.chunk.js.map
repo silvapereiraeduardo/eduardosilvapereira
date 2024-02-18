@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/Icons/IoLogoJavascript.js"],"names":["IoLogoJavascript"],"mappings":"4JAAA,mBAEeA,YAAf","file":"static/js/19.cdfebb52.chunk.js","sourcesContent":["import { IoLogoJavascript } from 'react-icons/io';\r\n\r\nexport default IoLogoJavascript;\r\n"],"sourceRoot":""}
