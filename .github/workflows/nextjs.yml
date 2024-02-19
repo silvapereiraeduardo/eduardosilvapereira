@@ -77,11 +77,9 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       #- name: Static HTML export with Next.js
       #  run: ${{ steps.detect-package-manager.outputs.runner }} next export
-      - name: Fix permissions
+      - name: List files in the repository
         run: |
-          chmod -v -R +rX "./out" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
+          ls ${{ github.workspace }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
