@@ -1,10 +1,8 @@
-module.exports = async (phase, { defaultConfig }) => {
-  /** @type {import('next').NextConfig} */
-  const nextConfig = {
-    // output: "export",
-    // images: {
-    //   unoptimized: true,
-    // },
-  };
-  return nextConfig;
+// @ts-check
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* config options here */
 };
+
+module.exports = nextConfig;
