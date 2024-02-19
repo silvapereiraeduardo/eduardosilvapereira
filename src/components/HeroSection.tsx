@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export function HeroSection() {
   return (
-    <section className="container bg-white dark:bg-gray-900">
+    <section className="container mx-auto bg-white dark:bg-gray-900">
       <div className="grid px-4 py-12 mx-auto sm:gap-4 sm:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
+        <div className="place-self-center col-span-12 lg:col-span-7 text-center lg:text-left mx-auto lg:mr-auto">
           <span className="text-sm italic text-gray-900 dark:text-gray-400">
             Guaíba, Rio Grande do Sul, Brasil
           </span>
@@ -21,6 +21,7 @@ export function HeroSection() {
           <a
             href="https://www.linkedin.com/in/eduardo-silva-pereira-7945026b/"
             target="_blank"
+            title="LinkedIn"
             className="inline-flex items-center justify-center px-4 py-4 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-full hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             <FaLinkedinIn />
@@ -29,6 +30,7 @@ export function HeroSection() {
           <a
             href="https://github.com/silvapereiraeduardo/"
             target="_blank"
+            title="Github"
             className="ml-2 inline-flex items-center justify-center px-4 py-4 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-full hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             <FaGithub />
