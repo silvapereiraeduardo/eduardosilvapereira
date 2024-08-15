@@ -44,6 +44,7 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
+          mkdir -p ~/.ssh
           ssh-keyscan -H $SERVER_HOST >> ~/.ssh/known_hosts
           scp -i private_key.pem nextjs-build.tar.gz $SERVER_USER@$SERVER_HOST:$DEPLOY_PATH
           ssh -i private_key.pem $SERVER_USER@$SERVER_HOST << 'EOF'
