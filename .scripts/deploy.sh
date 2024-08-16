@@ -7,7 +7,7 @@ echo "Preparing the server..."
 npm install -g yarn --yes
 
 # Install pm2
-yarn global add pm2 --yes
+npm i -g pm2 --yes
 
 echo "Preparing finished"
 
