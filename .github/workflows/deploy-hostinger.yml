@@ -31,9 +31,9 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          port: ${{ secrets.REMOTE_PORT }}
+          host: ${{ vars.REMOTE_HOST }}
+          username: ${{ vars.REMOTE_USER }}
+          port: ${{ vars.REMOTE_PORT }}
           password: ${{ secrets.REMOTE_PASSWORD }}
-          # script: cd ${{ secrets.REMOTE_TARGET }} && ./.scripts/deploy.sh
-          script: cd ${{ secrets.REMOTE_TARGET }} && ls
+          # script: cd ${{ vars.REMOTE_TARGET }} && ./.scripts/deploy.sh
+          script: cd ${{ vars.REMOTE_TARGET }} && ls
