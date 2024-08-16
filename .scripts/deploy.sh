@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# APP NAME
+APP_NAME="eduardosilvapereira.com"
+
 echo "Preparing the server..."
 
 # Install yarn
@@ -25,13 +28,19 @@ yarn install --production
 # Compile dependencies
 yarn build
 
-# Restart application
-pm2 restart npm --name "eduardosilvapereira.com" -- start
+# Verify if the app is already running
+if pm2 list | grep -q $APP_NAME; then
+    echo "Restarting $APP_NAME..."
+    pm2 restart $APP_NAME
+else
+    echo "Starting $APP_NAME..."
+    pm2 start app.js --name $APP_NAME
+fi
 
-# Configure pm2 to start on boot
-pm2 startup
-
-# Save pm2 configuration
+# save state of pm2
 pm2 save
+
+# show status of application
+pm2 status $APP_NAME
 
 echo "Deployment finished!"
