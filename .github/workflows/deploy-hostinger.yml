@@ -35,5 +35,4 @@ jobs:
           username: ${{ vars.REMOTE_USER }}
           port: ${{ vars.REMOTE_PORT }}
           password: ${{ secrets.REMOTE_PASSWORD }}
-          # script: cd ${{ vars.REMOTE_TARGET }} && ./.scripts/deploy.sh
-          script: cd ${{ vars.REMOTE_TARGET }} && ls
+          script: cd ${{ vars.REMOTE_TARGET }} && ./.scripts/deploy.sh
