@@ -11,6 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Checkout code
@@ -27,11 +28,12 @@ jobs:
       - name: Build Next.js application
         run: npm run build
 
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@main
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: '-rlgoDzvc -i --delete'
-          REMOTE_HOST: ${{ vars.REMOTE_HOST }}
-          REMOTE_USER: ${{ vars.REMOTE_USER }}
-          TARGET: ${{ vars.REMOTE_TARGET }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          port: ${{ secrets.REMOTE_PORT }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          # script: cd ${{ secrets.REMOTE_TARGET }} && ./.scripts/deploy.sh
+          script: cd ${{ secrets.REMOTE_TARGET }} && ls
