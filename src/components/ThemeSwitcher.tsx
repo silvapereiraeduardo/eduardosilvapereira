@@ -6,41 +6,23 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export const ThemeSwitcher = () => {
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const { systemTheme, theme, setTheme } = useTheme();
 
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  useEffect(() => setMounted(true), []);
 
-  if (!mounted) {
-    return null;
-  }
+  if (!mounted) return null;
 
-  const renderThemeChanger = () => {
-    if (!mounted) return null;
-
-    const currentTheme = theme === "system" ? systemTheme : theme;
-
-    if (currentTheme === "dark") {
-      return (
-        <SunIcon
-          className="w-6 h-6 text-white"
-          role="button"
-          onClick={() => setTheme("light")}
-        />
-      );
-    } else {
-      return (
-        <MoonIcon
-          className="w-6 h-6 text-gray-900"
-          role="button"
-          onClick={() => setTheme("dark")}
-        />
-      );
-    }
-  };
-
-  return <>{renderThemeChanger()}</>;
+  return (
+    <button
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="transition inline-flex items-center justify-center px-2 py-2 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-full hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+    >
+      {theme === "dark" ? (
+        <SunIcon className="w-4 h-4 text-white" />
+      ) : (
+        <MoonIcon className="w-4 h-4 text-gray-900" />
+      )}
+    </button>
+  );
 };

@@ -6,16 +6,13 @@ export function HeroSection() {
     <section className="container mx-auto bg-white dark:bg-gray-900">
       <div className="grid px-4 py-12 mx-auto sm:gap-4 sm:grid-cols-12">
         <div className="place-self-center col-span-12 lg:col-span-7 text-center lg:text-left mx-auto lg:mr-auto">
-          <span className="text-sm italic text-gray-900 dark:text-gray-400">
-            Guaíba, Rio Grande do Sul, Brasil
-          </span>
-
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-            Eduardo Pereira
+          <h1 className="max-w-screen-lg mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl dark:text-white">
+            Eduardo Silva Pereira
           </h1>
 
-          <p className="max-w-2xl mb-6 text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Desenvolvedor Web, com fóco em React, React Native e NodeJS.
+          <p className="max-w-screen-lg mb-4 text-gray-900 lg:mb-4 md:text-lg lg:text-xl dark:text-gray-400">
+            Desenvolvedor Web Pleno | Especialista em React, React Native,
+            Next.js e Node.js
           </p>
 
           <a
@@ -39,6 +36,7 @@ export function HeroSection() {
 
         <div className="relative hidden overflow-hidden lg:mt-0 lg:col-span-5 lg:flex rounded-tr-3xl rounded-bl-3xl">
           <Image
+            priority
             className="w-full -scale-x-100 grayscale"
             src="/assets/eduardo-silva-pereira-thumb.jpg"
             width={400}

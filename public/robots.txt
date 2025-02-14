@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eduardosilvapereira.com.br
+
+# Sitemaps
+Sitemap: https://eduardosilvapereira.com.br/sitemap.xml

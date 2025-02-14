@@ -12,6 +12,7 @@ export function AboutMeSection() {
           <Image
             className="rounded-full"
             src="/assets/eduardo-silva-pereira-thumb.jpg"
+            priority
             width={150}
             height={150}
             alt="Foto de Eduardo"
@@ -19,26 +20,25 @@ export function AboutMeSection() {
         </div>
 
         <div className="flex-1">
-          <h3 className="mb-4 font-semibold">
-            Olá, eu sou o Eduardo Pereira, Desenvolvedor Front-end e Back-end.
-          </h3>
-
           <p className="text-justify mb-4">
-            Adoro linguagens web e estou sempre me atualizando de acordo com o
-            mercado atual, aprendendo novas técnicas e boas práticas. Possuo
-            conhecimentos na linguagem JavaScript, desenvolvendo com React,
-            React Native, Jquery, HTML5, CSS3, Bootstrap, entre outros. Além
-            disso, também possuo experiência no desenvolvimento de micro
-            serviços com NodeJS e PHP.
+            Sou um desenvolvedor Web e Mobile apaixonado por tecnologia, com
+            experiência sólida em React, React Native, Node.js e TypeScript. Meu
+            foco é criar soluções de alto desempenho, seguindo boas práticas de
+            arquitetura, como Arquitetura Limpa e Hexagonal.
           </p>
 
           <p className="text-justify mb-4">
-            Sou graduado no Curso Superior em Tecnólogo em Análise e
-            Desenvolvimento de Sistemas, na Universidade Luterana do Brasil
-            (ULBRA), além de ser formado em outros dois cursos técnicos, Curso
-            Técnico em Redes de Computadores e no Curso Técnico em Informática,
-            realizados na Escola Estadual de Educação Profissional Dr. Solon
-            Tavares.
+            Atualmente, sou Desenvolvedor Mobile Pleno na Compass UOL, onde atuo
+            na construção de aplicações performáticas e escaláveis. Tenho
+            experiência com Docker, PostgreSQL, Zustand, Redux e Vite, além de
+            desenvolver integrações com APIs RESTful e escrever testes
+            automatizados com Jest e Vitest.
+          </p>
+
+          <p className="text-justify mb-4">
+            Estou sempre buscando novos desafios e me aprimorando para entregar
+            código limpo, modular e bem estruturado. Se quiser conversar sobre
+            tecnologia ou oportunidades, me envie uma mensagem! 🚀
           </p>
         </div>
       </div>

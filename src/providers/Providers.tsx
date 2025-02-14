@@ -19,7 +19,7 @@ export const Providers = ({ children }: Props) => {
   }
 
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       {children}
     </ThemeProvider>
   );

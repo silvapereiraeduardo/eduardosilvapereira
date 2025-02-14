@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`min-h-screen mx-auto max-w-6xl flex flex-col bg-white dark:bg-gray-900 ${inter.className}`}
+        className={`min-h-screen mx-auto max-w-screen-lg flex flex-col bg-white dark:bg-gray-900 ${inter.className}`}
       >
         <Providers>
           <Navbar />
-          <main className="flex flex-col flex-1 max-w-6xl w-full">
+          <main className="flex flex-col flex-1 max-w-screen-lg w-full">
             {children}
           </main>
           <Footer />

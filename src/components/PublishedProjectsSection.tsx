@@ -17,6 +17,7 @@ export function PublishedProjectsSection() {
         data-te-ripple-color="dark"
       >
         <Image
+          loading="lazy"
           src={image}
           width={350}
           height={260}
