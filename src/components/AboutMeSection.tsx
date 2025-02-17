@@ -28,8 +28,8 @@ export function AboutMeSection() {
           </p>
 
           <p className="text-justify mb-4">
-            Atualmente, sou Desenvolvedor Mobile Pleno na Compass UOL, onde atuo
-            na construção de aplicações performáticas e escaláveis. Tenho
+            Atualmente, sou desenvolvedor na Compass UOL, onde atuo na
+            construção de aplicações performáticas e escaláveis. Tenho
             experiência com Docker, PostgreSQL, Zustand, Redux e Vite, além de
             desenvolver integrações com APIs RESTful e escrever testes
             automatizados com Jest e Vitest.

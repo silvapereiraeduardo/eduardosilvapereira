@@ -42,7 +42,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Eduardo Silva Pereira",
-              jobTitle: "Desenvolvedor Web Pleno",
+              jobTitle: "Desenvolvedor Web e Mobile",
               url: "https://eduardosilvapereira.com.br",
               sameAs: [
                 "https://www.linkedin.com/in/eduardo-silva-pereira-7945026b/",

@@ -11,7 +11,7 @@ export function HeroSection() {
           </h1>
 
           <p className="max-w-screen-lg mb-4 text-gray-900 lg:mb-4 md:text-lg lg:text-xl dark:text-gray-400">
-            Desenvolvedor Web Pleno | Especialista em React, React Native,
+            Desenvolvedor Web e Mobile | Especialista em React, React Native,
             Next.js e Node.js
           </p>
 
