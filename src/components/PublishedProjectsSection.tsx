@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SkelectonImage } from "./SkelectonImage";
 
 export function PublishedProjectsSection() {
   function renderContent({
@@ -16,8 +16,7 @@ export function PublishedProjectsSection() {
         data-te-ripple-init
         data-te-ripple-color="dark"
       >
-        <Image
-          loading="lazy"
+        <SkelectonImage
           src={image}
           width={350}
           height={260}

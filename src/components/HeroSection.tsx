@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SkelectonImage } from "./SkelectonImage";
 
 export function HeroSection() {
   return (
@@ -35,8 +35,7 @@ export function HeroSection() {
         </div>
 
         <div className="relative hidden overflow-hidden lg:mt-0 lg:col-span-5 lg:flex rounded-tr-3xl rounded-bl-3xl">
-          <Image
-            priority
+          <SkelectonImage
             className="w-full -scale-x-100 grayscale"
             src="/assets/eduardo-silva-pereira-thumb.jpg"
             width={400}

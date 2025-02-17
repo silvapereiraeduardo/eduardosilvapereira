@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SkelectonImage } from "./SkelectonImage";
 
 export function AboutMeSection() {
   return (
@@ -9,10 +9,9 @@ export function AboutMeSection() {
 
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start justify-center">
         <div className="">
-          <Image
+          <SkelectonImage
             className="rounded-full"
             src="/assets/eduardo-silva-pereira-thumb.jpg"
-            priority
             width={150}
             height={150}
             alt="Foto de Eduardo"
