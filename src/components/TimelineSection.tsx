@@ -38,6 +38,7 @@ export function TimelineSection({
     return (
       <>
         <div
+          key={`timeline-${side}-${year}-${month}`}
           className={`hidden mb-8 md:flex justify-between items-center w-full ${side}-timeline ${
             side === "left" ? "flex-row-reverse" : ""
           }`}
