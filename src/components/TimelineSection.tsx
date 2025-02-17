@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function TimelineSection({
   title,
   values,
@@ -10,6 +12,8 @@ export function TimelineSection({
     title?: string;
     subTitle?: string;
     text?: string;
+    ctaText?: string;
+    ctaLink?: string;
   }[];
 }) {
   function renderContent({
@@ -19,6 +23,8 @@ export function TimelineSection({
     title,
     subTitle,
     text,
+    ctaLink,
+    ctaText,
   }: {
     side: "left" | "right";
     month?: string;
@@ -26,6 +32,8 @@ export function TimelineSection({
     title?: string;
     subTitle?: string;
     text?: string;
+    ctaText?: string;
+    ctaLink?: string;
   }) {
     return (
       <>
@@ -54,6 +62,15 @@ export function TimelineSection({
             <p className="text-sm font-light text-gray-900 dark:text-white">
               {text}
             </p>
+            {ctaLink && ctaText && (
+              <Link
+                href={ctaLink}
+                target="_blank"
+                className="text-blue-400 hover:text-blue-300"
+              >
+                {ctaText}
+              </Link>
+            )}
           </div>
         </div>
 
@@ -79,6 +96,15 @@ export function TimelineSection({
             <p className="text-sm font-light text-gray-900 dark:text-white">
               {text}
             </p>
+            {ctaLink && ctaText && (
+              <Link
+                href={ctaLink}
+                target="_blank"
+                className="text-blue-400 hover:text-blue-300"
+              >
+                {ctaText}
+              </Link>
+            )}
           </div>
         </div>
       </>
